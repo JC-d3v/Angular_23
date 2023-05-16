@@ -26,8 +26,13 @@ const { song: anotherSong, songDuration: duration, details: detalles } = audioPl
 
 const { author } = detalles;
 
-console.log('song: ', anotherSong);
-console.log('duration: ', duration);
-console.log('author: ', author);
+// console.log('song: ', anotherSong);
+// console.log('duration: ', duration);
+// console.log('author: ', author);
+
+// TIP: desEstructuracion de arreglos
+const [, , trunks = 'No encontrado']: string[] = ['Goku', 'Vegeta'];
+
+console.log('Personaje 3:', trunks);
 
 export { }
